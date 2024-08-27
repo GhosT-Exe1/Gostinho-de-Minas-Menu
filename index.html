@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="imagex/png" href="src/assets/logo.jpg">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Gostinho de Minas - Pedidos"/>
+    <meta property="og:image" content=""/>
+    <meta property="og:description" content="Gostinho de Minas - Pedidos"/>
+    <meta property="og:site_name" content="Gostinho de Minas - São Luis-MA"/>
+    
+    
+    <link rel="stylesheet" href="./src/styles/output.css">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+
+    <title>Gostinho de Minas - Pedidos</title>
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img 
+            src="src/assets/logo.jpg"
+            alt="Logo DevBurguer" 
+            class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+            />
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">
+                Gostinho de Minas - São Luis
+            </h1>
+
+            <span class="text-white font-medium">R. Bom Jesus - Tirirical, São Luis - MA</span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">Seg á Sab - 8:00 as 17:30</span>
+            </div>
+
+            <div class="social-icons mt-5 text-white bg-transparent rounded-full shadow-lg hover:scale-110 duration-200">
+                <a href="https://www.instagram.com/gostinhodeminasslz/"><i class="fa-brands fa-instagram"></i> @gostinhodeminasslz</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- FIM HEADER -->
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        Pão de Queijo
+    </h2>
+
+    <!-- INICIO MENU -->
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2">
+                <img 
+                src="src/assets/pqueijo.png" 
+                alt="Pão de Queijo 30G (1KG)"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">Pão de Queijo 30G (1KG)</p>
+                    <p class="text-sm">Pão de Queijo diretamente de Minas. 50UNI</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$13.70</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Pão de Queijo 30G (1KG)"
+                            data-price="13.70" 
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- FIM PRODUTO -->
+
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2">
+                <img 
+                src="src/assets/pqueijo.png" 
+                alt="Pão de Queijo 25G (5KG)"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">Pão de Queijo 25G (5KG)</p>
+                    <p class="text-sm">Pão de Queijo diretamente de Minas. 50UNI</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$68.50</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Pão de Queijo 25G (5KG)"
+                            data-price="68.50"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- FIM PRODUTO -->
+
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2">
+                <img 
+                src="src/assets/pqueijo.png" 
+                alt="Pão de Queijo 30G (5KG)"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">Pão de Queijo 30G (5KG)</p>
+                    <p class="text-sm">Pão de Queijo diretamente de Minas. 50UNI</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$68.50</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Pão de Queijo 30G (5KG)"
+                            data-price="68.50" 
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- FIM PRODUTO -->
+
+            <!-- PRODUTO ITEM -->
+            <div class="flex gap-2">
+                <img 
+                src="src/assets/pqueijo.png" 
+                alt="Pão de Queijo 50G (5KG)"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">Pão de Queijo 50G (5KG)</p>
+                    <p class="text-sm">Pão de Queijo diretamente de Minas. 50UNI</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$68.50</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Pão de Queijo 50G (5KG)"
+                            data-price="68.50"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- FIM PRODUTO -->
+
+              <!-- PRODUTO ITEM -->
+            <div class="flex gap-2">
+                <img 
+                src="src/assets/pqueijo.png" 
+                alt="Pão de Queijo 100G (5KG)"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">Pão de Queijo 100G (5KG)</p>
+                    <p class="text-sm">Pão de Queijo diretamente de Minas. 50UNI</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$68.50</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Pão de Queijo 100G (5KG)"
+                            data-price="68.50"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- FIM PRODUTO -->
+            
+
+        </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">
+                Palitos
+            </h2>
+        </div>
+
+        <!-- GRID BEBIDAS -->
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu"> 
+
+            <!-- BEBIDA ITEM -->
+            <div class="flex gap-2 w-full">
+                <img 
+                src="src/assets/pqueijo.png" 
+                alt="Palito"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Palito (1KG)</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$15.00</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Palito"
+                            data-price="15.00"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- FIM BEBIDA -->
+
+        <!-- FIM GRID BEBIDAS -->
+
+
+
+    </div>
+
+
+    <!-- FIM MENU -->
+
+    <!-- MODAL CART -->
+
+    <div class="bg-black/50 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold">Total: <span id="cart-total">R$0.00</span></p>
+
+            <p class="font-bold mt-4">Endereço de Entrega:</p>
+            <input
+                type="text"
+                placeholder="Digite seu endereço completo..."
+                id="address"
+                class="w-full border-2 p-1 rounded my-1"
+            />
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Finalizar Pedido</button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <!-- FIM MODAL CART -->
+
+    <!-- BUTTON CART FOOTER -->
+     <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center" id="cart-footer">
+        <button class="flex items-center gap-2 text-white font-bold"
+        id="cart-btn"
+        >
+            (<span id="cart-count">0</span>)
+            Veja meu carrinho
+            <i class="fa fa-cart-plus text-lgg text-white"></i>
+        </button>
+     </footer>
+     <!-- FIM BUTTON CART FOOTER -->
+
+
+     <!-- FOOTER -->
+
+     <footer class="w-full footer py-3 fixed items-center justify-center gap-2">
+        <div class="social">
+            <a href="https://github.com/GhosT-Exe1"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/gostinhodeminasslz/"><i class="fa-brands fa-instagram"></i></a>
+        </div>  
+        <p class="copyright mb-4">
+            <a href="https://www.instagram.com/ale._mrqs/">© GhosT-Exe1 | All Right Reserved</a>
+        </p>
+    </footer>
+
+    <!-- FIM FOOTER -->
+
+
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+     <script src="src/javascript/script.js"></script>
+
+</body>
+</html>
